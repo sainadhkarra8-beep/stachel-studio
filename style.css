@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6b4226;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #555555;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #8b5e34;
+}
+
+.quote-btn {
+    background: #6b4226;
+    color: white;
+    padding: 11px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+background: #3b2618;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 25px;
+    color: white;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    max-width: 750px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #d7a86e;
+}
+
+.hero-content > p {
+    max-width: 650px;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    background: #8b5e34;
+    color: white;
+    padding: 13px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.secondary-btn {
+    padding: 12px 22px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p,
+.about-content > p:first-child,
+.contact p:first-child,
+.certifications > p {
+    color: #8b5e34;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.about h2,
+.contact h2,
+.certifications h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    transition: 0.3s;
+    background: white;
+}
+.product-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+    font-size: 20px;
+}
+
+.product-card a {
+    transition: 0.3s;
+}
+
+.product-card a:hover {
+    color: #8b5e34;
+    padding-left: 5px;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 220px;
+    background: #eee8df;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-image img {
+    transition: 0.3s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    margin: 20px 20px 10px;
+}
+
+.product-card p {
+    margin: 0 20px 15px;
+    color: #666666;
+}
+
+.product-card a {
+    display: block;
+    margin: 0 20px;
+    color: #6b4226;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: #faf7f3;
+}
+
+.about-content {
+    padding: 30px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-box {
+    background: #6b4226;
+    color: white;
+    padding: 70px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about-box strong {
+    display: block;
+    font-size: 60px;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    padding: 30px;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+}
+
+.why-card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* ================= CERTIFICATIONS ================= */
+
+.certifications {
+    text-align: center;
+    background: #f8f5f0;
+    max-width: none;
+}
+
+.cert-grid {
+    max-width: 1000px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cert-grid div {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    padding: 15px;
+    border: none;
+    background: #6b4226;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #4d2e1a;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #21160e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .products-grid,
+    .why-grid,
+    .cert-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .products-grid,
+    .why-grid,
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
